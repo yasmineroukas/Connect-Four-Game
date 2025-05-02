@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect Four</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Connect Four 🤖</h1>
+    
+    <div class="game-info">
+      <div id="status">À toi de jouer !</div>
+      <button id="reset-button" onclick="resetGame()">🔄 Nouvelle partie</button>
+    </div>
+    
+    <div class="board-container">
+      <div class="board" id="board"></div>
+      <div class="column-markers">
+        <div class="marker" data-col="0"></div>
+        <div class="marker" data-col="1"></div>
+        <div class="marker" data-col="2"></div>
+        <div class="marker" data-col="3"></div>
+        <div class="marker" data-col="4"></div>
+        <div class="marker" data-col="5"></div>
+        <div class="marker" data-col="6"></div>
+      </div>
+    </div>
+    
+    <div class="instructions">
+      <p>Alignez 4 jetons pour gagner ! Cliquez sur une colonne pour jouer.</p>
+      <p>You: <span class="token player1"></span> | Yasmine's Ai: <span class="token player2"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
